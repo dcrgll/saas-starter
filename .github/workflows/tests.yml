@@ -1,0 +1,11 @@
+name: Tests with 100% coverage
+on: push
+jobs:
+  code-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run Tests
+        run: yarn test:ci --coverage
