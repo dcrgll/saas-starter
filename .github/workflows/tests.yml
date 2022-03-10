@@ -1,7 +1,7 @@
-name: Tests with 100% coverage
+name: Pass tests with 100% coverage
 on: push
 jobs:
-  code-check:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
